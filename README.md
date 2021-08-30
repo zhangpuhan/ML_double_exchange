@@ -35,6 +35,6 @@ This repository includes codes, trained model samples and data samples to succes
       
  5. *simulation_result_sample*:
       
-      this folder include simulation result from machine learning that is used to plot FIG. 3 and FIG. 4 in the paper.
+      this folder include simulation result from machine learning that is used to plot FIG. 3 and FIG. 4 in the paper. The model used to generate the data is included in bullet point 4.
       
 When you reach this line, you have all you need to reproduce the results in https://arxiv.org/abs/2105.08221. If you have more questions, please contact pz4ee@virginia.edu for information.
