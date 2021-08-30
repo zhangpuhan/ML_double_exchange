@@ -4,5 +4,5 @@
 
 ## Introduction
 This repository includes codes, trained model samples and data samples to successfully run the machine learning spin dynamics. This will reproduce results in the paper https://arxiv.org/abs/2105.08221. Sub-directories in this repo are:
-1. *training_data*: training data sample, from a 30*30 lattice double exchange simulation. The columns of each datafile corresponding to x, y, spin_x, spin_y, spin_x, torque_x, torque_y, torque_z.  
-2. *bond_chirality*: generate   
+1. *training_data_sample*: training data sample, from a 30*30 lattice double exchange simulation. The columns of each datafile corresponding to x, y, spin_x, spin_y, spin_x, torque_x, torque_y, torque_z. A matlab file ""
+2. *bond_chirality*: generate neighboring information for each lattice site  
