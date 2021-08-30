@@ -4,4 +4,4 @@
 
 ## Introduction
 This repository includes codes, trained model sample and data samples to successfully run the machine learning spin dynamics. This will reproduce results in the paper https://arxiv.org/abs/2105.08221 
-1. codes for training machine learning spin dynamics model, training data samples, trained neural network model samples
+1. Codes for generating 
