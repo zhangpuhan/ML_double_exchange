@@ -9,4 +9,4 @@ This repository includes codes, trained model samples and data samples to succes
       training data sample, from 30*30 lattice spin double exchange simulations. The training data includes both from random spin condiguration calculation and quench simulation. The columns of each datafile corresponding to x, y, spin_x, spin_y, spin_x, torque_x, torque_y, torque_z. A matlab file to plot out the spin configuration and electron density-- "plot_spin.m" and its color function "rainbow.dat" are also included. 
   
 2. *bond_chirality*: 
-  generate neighboring information for each lattice site  
+      generate neighboring information for each lattice site  
