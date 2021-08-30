@@ -17,6 +17,8 @@ This repository includes codes, trained model samples and data samples to succes
       
 4. *simulation*：
 
-      ```python
-      python main.py
+      enter the simulation and do following, a trained model is already included and this code will do machine learning dynamics directly in a 30*30 lattice. You can use *bond_chirality* code to generate features for larger lattice such as 100*100
+
+      ```shell
+      cd de_c_pure
       ```
