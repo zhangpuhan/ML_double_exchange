@@ -22,6 +22,13 @@ This repository includes codes, trained model samples and data samples to succes
       
 3. *training*:
 
+      this folder includes codes for training and testing model. The error decreasing can be illustrated with the training data included in this folder. Go to this folder and do:
+      
+      ```shell
+      python main.py
+      ```
+      you can see the prediction error decrease as the training goes on. The trained model at some points will be saved for further use.
+
       
 4. *simulation*：
 
