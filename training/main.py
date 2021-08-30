@@ -43,6 +43,9 @@ class Net(torch.nn.Module):
 bond_list = read_neighbor_list("data_input/" + bond_list_input, bond_ramp)
 bond_list = new_process_bond_list(bond_list)
 
+# neighbor_list = read_neighbor_list("data_input/neighbor_30.csv", 14)
+# neighbor_list = new_process_bond_list(neighbor)
+
 net = Net()
 net.to(constant.device)
 if from_bench_mark:
@@ -69,6 +72,7 @@ while training_start <= 4:
 
         optimizer.zero_grad()
         x_temp = new_create_bond_matrix(temp_coordinate, bond_list)
+        # x_temp = create_matrix(temp_coordinate, neighbor_list)
         energy_prediction_temp = net(x_temp)
         energy_prediction = torch.sum(energy_prediction_temp)
         force_prediction = -torch.autograd.grad(energy_prediction, temp_coordinate, create_graph=True)[0]
@@ -105,6 +109,7 @@ while training_start <= 4:
         temp_coordinate = spin[0].requires_grad_(True)
 
         x_temp = new_create_bond_matrix(temp_coordinate, bond_list)
+        # x_temp = create_matrix(temp_coordinate, neighbor_list)
         energy_prediction_temp = net(x_temp)
 
         energy_prediction = torch.sum(energy_prediction_temp)
