@@ -6,7 +6,7 @@
 This repository includes codes, trained model samples and data samples to successfully run the machine learning spin dynamics. This will reproduce results in the paper https://arxiv.org/abs/2105.08221. Sub-directories in this repo are:
 1. *training_data_sample*:
 
-      training data samples, from 30x30 lattice spin double exchange simulations. The training data includes both from random spin condiguration calculation and quench simulation. The columns of each datafile corresponding to x, y, spin_x, spin_y, spin_x, torque_x, torque_y, torque_z. A matlab file to plot out the spin configuration and electron density-- "plot_spin.m" and its color function "rainbow.dat" are also included. 
+      training data samples, from 30x30 lattice spin double exchange simulations. The training data includes both from random spin condiguration calculation and quench simulation. The columns of each datafile corresponding to x, y, density, spin_x, spin_y, spin_x, torque_x, torque_y, torque_z. A matlab file to plot out the spin configuration and electron density-- "plot_spin.m" and its color function "rainbow.dat" are also included. 
   
 2. *bond_chirality*: 
       
@@ -17,7 +17,7 @@ This repository includes codes, trained model samples and data samples to succes
       
 4. *simulation*：
 
-      enter the simulation and do following, a trained model is already included and this code will do machine learning dynamics directly in a 30x30 lattice. You can use *bond_chirality* code to generate features for larger lattice such as 100x100
+      enter the *simulation* folder and do following, a trained model (this model is used to generate FIG. 2 in the paper) is already included and this code will do machine learning dynamics directly in a 30x30 lattice. You can use *bond_chirality* code to generate features for larger lattice such as 100x100.
 
       ```shell
       cd de_c_pure
@@ -32,3 +32,9 @@ This repository includes codes, trained model samples and data samples to succes
       python main.py
       ```
       the calculated spin configurations will to saved to folder *snapshot_save*. The first three columns corresponds to spin_x, spin_y and spin_z. 
+      
+ 5. *simulation_result_sample*:
+      
+      this folder include simulation result from machine learning that is used to plot FIG. 3 and FIG. 4 in the paper.
+      
+When you reach this line, you have all you need to reproduce the results in https://arxiv.org/abs/2105.08221. If you have more questions, please contact pz4ee@virginia.edu for information.
