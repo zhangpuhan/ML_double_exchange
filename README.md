@@ -6,7 +6,7 @@
 This repository includes codes, trained model samples and data samples to successfully run the machine learning spin dynamics. This will reproduce results in the paper https://arxiv.org/abs/2105.08221. Sub-directories in this repo are:
 1. *training_data_sample*:
 
-      training data samples, from 30*30 lattice spin double exchange simulations. The training data includes both from random spin condiguration calculation and quench simulation. The columns of each datafile corresponding to x, y, spin_x, spin_y, spin_x, torque_x, torque_y, torque_z. A matlab file to plot out the spin configuration and electron density-- "plot_spin.m" and its color function "rainbow.dat" are also included. 
+      training data samples, from 30x30 lattice spin double exchange simulations. The training data includes both from random spin condiguration calculation and quench simulation. The columns of each datafile corresponding to x, y, spin_x, spin_y, spin_x, torque_x, torque_y, torque_z. A matlab file to plot out the spin configuration and electron density-- "plot_spin.m" and its color function "rainbow.dat" are also included. 
   
 2. *bond_chirality*: 
       
@@ -17,8 +17,14 @@ This repository includes codes, trained model samples and data samples to succes
       
 4. *simulation*：
 
-      enter the simulation and do following, a trained model is already included and this code will do machine learning dynamics directly in a 30*30 lattice. You can use *bond_chirality* code to generate features for larger lattice such as 100*100
+      enter the simulation and do following, a trained model is already included and this code will do machine learning dynamics directly in a 30x30 lattice. You can use *bond_chirality* code to generate features for larger lattice such as 100x100
 
       ```shell
       cd de_c_pure
+      mkdir build
+      cd build
+      cmake ..
+      make
+      cp de_c_pure ../../de_python_pure_large_size
       ```
+      the step above create a C++ exectable to help realizing simulation
