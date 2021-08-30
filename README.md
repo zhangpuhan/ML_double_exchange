@@ -4,4 +4,4 @@
 
 ## Introduction
 This repository includes codes, trained model samples and data samples to successfully run the machine learning spin dynamics. This will reproduce results in the paper https://arxiv.org/abs/2105.08221. Sub-directories in this repo are:
-1. *training_data*: training data sample, from a 30*30 lattice 
+1. *training_data*: training data sample, from a 30*30 lattice double exchange simulation
