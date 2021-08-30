@@ -27,4 +27,8 @@ This repository includes codes, trained model samples and data samples to succes
       make
       cp de_c_pure ../../de_python_pure_large_size
       ```
-      the step above create a C++ exectable to help realizing simulation
+      the step above create a C++ exectable to help realizing simulation, then go to *de_python_pure_large_size* folder and do:
+      ```python
+      python main.py
+      ```
+      the calculated spin configurations will to saved to folder *snapshot_save*. The first three columns corresponds to spin_x, spin_y and spin_z. 
