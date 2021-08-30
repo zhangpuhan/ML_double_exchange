@@ -17,6 +17,6 @@ This repository includes codes, trained model samples and data samples to succes
       
 4. *simulation*：
 
-      ···python
+      ```python
       python main.py
-      ···
+      ```
