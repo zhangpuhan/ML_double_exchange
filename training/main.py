@@ -1,6 +1,7 @@
 from help import read_neighbor_list
 from test_bond_analysis import new_create_bond_matrix
 from test_bond_analysis import new_process_bond_list
+from bond_analysis import create_matrix
 import torch
 import torch.nn.functional as f
 import torch.utils.data as data
